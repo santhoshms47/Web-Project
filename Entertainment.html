@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEWS 24</title>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="HTML,CSS">
+	<meta name="Author" content="Santhosh">
+	<link rel="icon" href="Images/Logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+	
+<body id="Home">
+
+	<a href="NEWS24.html">
+	<img src="Images/Logo.png" align=center id="logo" alt="No img">
+	</a>
+
+	<p id="time"></p>
+	<script>
+		var d = new Date();
+		document.getElementById("time").innerHTML = d;
+	</script><br>
+
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="India.html">India</a>
+		<a href="World.html">World</a>
+		<a href="Covid-19.html">Covid-19</a>
+		<a href="Entertainment.html" id="active">Entertainment</a>
+		<a href="Contact.html">Contact Us</a>
+	</nav>
+	<hr color="black">
+	
+	<h2 align="center">Watch the latest season of Money Heist Only On NETFLIX<sup>TM</sup></h2>
+
+	<div id="Audio">
+		<h3 id="AudioHead">La Casa De Papel (Money Heist)</h3>
+		<hr color="red">
+		<p style="text-align: center;">Spanish Television Series</p>
+
+		<h3 align='center'>Ratings</h3>
+		<label>IMDb</label>
+			<progress value="85" max="100"> 85% </progress> 8.5/10
+		<br><br>
+		<label>Rotten Tomatoes</label>
+			<progress value="100" max="100"> 100% </progress> 10/10
+		<br><br>
+		<label>Common Sense Media</label>
+			<progress value="80" max="100"> 80% </progress> 80/10
+		<br><br>
+
+		<hr color="red">
+		<p style="text-align: center;">My Life Is Going On</p>
+		<audio controls>
+			<source src="Images\Netflix\My Life Is Going On - Cecilia Krull.mp3" type="audio/mp3">
+			Your browser does not support the audio tag.
+		</audio><br><br>
+	</div>
+
+	<div id="Netflix">
+		<img src="Images/Netflix/Logo.jfif" style="width: 100px; float: right; margin-right: 270px;"> 
+		<h3 id="NetflixHead">Streaming Now On</h3>
+		
+		<div id="NetflixImg">
+			<a href="https://www.netflix.com/in/">
+				<img class="mySlides" src="Images/Netflix/MM1.jpg" title="Click the banner to get started">
+				<img class="mySlides" src="Images/Netflix/MM2.jpg" title="Click the banner to get started">
+			</a>
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2500); // Change image every 2.5 seconds
+			}
+		</script>
+	</div>
+	
+
+</body>
+</html>

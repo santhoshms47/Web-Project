@@ -1,0 +1,313 @@
+/*INDEX*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "Poppins", sans-serif;
+}
+#myVideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+h1{
+    font-size: 48px;
+    text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+}
+#LandingH3{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+}
+.content{
+	position: fixed;
+	margin-top: 200px;
+	background: rgba(0, 0, 0, 0.836);
+	color: #f1f1f1;
+	width: 100%;
+	padding-bottom: 20px;
+}
+#start{
+	width: 190px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	background: transparent;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+#start:hover{
+	background: #ddd;
+	color: black;
+	font-style: bold;
+	transition: .5s;
+}
+
+/*HOME*/
+#Home{
+	background-color: white;
+}
+#logo{
+	float: left;
+	margin-left: 250px;
+	width: 140px;
+	height: 145px;
+}
+nav{
+	text-align: center;
+	padding-top: 60px;
+	background-color:transparent;
+	padding-bottom: 40px;
+}
+a{
+	color: black;
+	margin: 5px;
+	font-size: 21px;
+	padding-top: 8px;
+	padding-right: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+#active{
+	text-decoration: underline;
+}
+#time{
+	float: right;
+	padding: 3px;
+	border: 1.5px solid black;
+	border-radius: 15px;
+}
+marquee{
+	margin: 10px;
+	letter-spacing: 1px;
+	background-color: yellow;
+}
+fieldset{
+	float: left;
+	width: 700px;
+	margin: 10px;
+	border: 1.5px solid black;
+}
+#FieldImg{
+	float: left;
+	height: 225px;
+	width: 225px;
+	padding: 10px;
+}
+legend{
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+p{
+	padding: 5px;
+	margin: 5px;
+}
+
+
+
+/*INDIA*/
+mark{
+	margin-left: 540px;
+	letter-spacing: 1px;
+}
+#InfoPics{
+	margin-left: 250px;
+}
+#InfoPics1{
+	margin-left: 450px;
+}
+span{
+	font-size: 22px;
+	font-weight: bold;
+	color: #e51f3b;
+}
+#LeftDiv{
+	float: left;
+	width: 730px;
+	margin: 5px;
+	border: 2.5px dotted black;
+}
+#RightDiv{
+	float: right;
+	width: 730px;
+	margin: 5px;
+	border: 2.5px dotted black;
+}
+#DivImg{
+	margin-top: 10px;
+	float: left;
+	height: 250px;
+	width: 250px;
+	padding: 10px;
+}
+#IndiaHr{
+	margin-top: 450px;
+}
+#IndiaTab{
+	margin-left: 450px;
+}
+th,td{
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+details{
+	border: 1.5px solid black;
+	padding: 5px;
+}
+summary{
+	font-size: 30px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+}
+#AtalVideo{
+	float: right;
+	padding: 10px;
+	width: 500px;
+}
+#Banner{
+	width: 1500px;
+	border: 2px solid black;
+}
+
+/*WORLD*/
+#WorldImg{
+	height: 600px;
+	width: 900px;
+	float: right;
+	margin-top: 15px;
+	box-shadow: 3px 3px 4px 4px black;
+}
+#SlideHead{
+	margin-left: 400px;
+	font-size: 22px;
+	text-decoration: underline;
+}
+#SlideImg{
+	margin-top: 12px;
+	margin-left: 250px;
+	max-width: 1000px;
+	max-height: 400px;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+.mySlides{
+	width: 100%;
+}
+
+/*COVID-19*/
+#Info{
+	width: 1100px;
+	margin-left: 200px;
+}
+#CovidImg{
+	height: 200px;
+	width: 350px;
+	float: right;
+}
+pre{
+	text-align: center;
+	font-size: 22px;
+}
+
+
+/*IMAGES*/
+#Netflix{
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+	border: 1.5px solid #E50914;
+	background-color: black;
+}
+#NetflixHead{
+	color: #E50914;
+	text-align: center;
+	margin-left: 260px;
+}
+#NetflixImg{
+	max-width: 800px;
+	max-height: 500px;
+}
+#Audio{
+	float: left;
+	color: #E50914;
+	width: 550px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 40px;
+	background-color: black;
+	border: 1.5px solid #E50914;
+}
+#AudioHead{
+	color: #E50914;
+	text-align: center;
+}
+audio{
+	margin-left: 120px;
+}
+progress{
+	background-color: green;
+}
+
+
+/*CONTACTSUS*/
+#ContactSlides{
+	float: left;
+	margin-left: 50px;
+	margin-top: 7px;
+	max-width: 700px;
+	max-height: 400px;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+#ContactBox{
+	width: 800px;
+	height: 490px;
+	text-align: center;
+	border: 1.5px solid black;
+}
+#Contactform{
+	width: 400px;
+	float: right;
+	padding: 10px;
+	margin-right: 200px;
+	border: 1.5px solid black;
+}
+label,input,textarea,button{
+	font-size: 17px;
+	width: 350px;
+	padding: 5px;
+	margin: 10px;
+}	
+#Submit{
+	width: 100px;
+	margin-left: 140px;
+	border: 2px solid green;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#Submit:active {
+	order: 2px solid green;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	transform: translateY(3px);
+}
+footer{
+	margin-top: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	background-color: rgb(108, 209, 243);
+}

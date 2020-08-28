@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEWS 24</title>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="HTML,CSS">
+	<meta name="Author" content="Santhosh">
+	<link rel="icon" href="Images/Logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+	
+<body id="Home">
+
+	<a href="NEWS24.html">
+	<img src="Images/Logo.png" align=center id="logo" alt="No img">
+	</a>
+
+	<p id="time"></p>
+	<script>
+		var d = new Date();
+		document.getElementById("time").innerHTML = d;
+	</script><br>
+
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="India.html">India</a>
+		<a href="World.html" id="active">World</a>
+		<a href="Covid-19.html">Covid-19</a>
+		<a href="Entertainment.html">Entertainment</a>
+		<a href="Contact.html">Contact Us</a>
+	</nav>
+	<hr color="black"><br>
+
+	<div id="InfoPics1">
+		<img src="Images/active_patient.png">
+		<span>8,82,068</span>
+		<caption>COVID-19 cases</caption>
+		<img src="Images/cured.png">
+		<span>1,85,067</span>
+		<caption>Cured</caption>
+		<img src="Images/death.png">
+		<span>44,136</span>
+		<caption>Death cases</caption>
+	</div><br>
+
+	<div id="LeftDiv" style="border: 5px double black;">
+		<img src="Images/China.jpg" alt="No img" id="DivImg">
+		<h2>China pauses in memory of coronavirus victims and 'martyrs'</h2>
+		<p>
+			China came to a standstill on Saturday to mourn patients and medical staff killed by the coronavirus, as the world's most populous country observed a nationwide three-minute silence. At 10 am, citizens paused, cars, trains and ships sounded their horns, and air-raid sirens rang out in memory of the more than 3,000 lives claimed by the virus in China.
+			In Wuhan- where the virus first emerged late last year, sirens and horns sounded as people fell silent. Staff at the Tongji Hospital stood with heads bowed towards the building, in the protective hazmat suits that have become a symbol of the crisis worldwide.
+		</p>
+		<p>
+			State media showed Chinese President Xi Jinping and other government officials standing outside a Beijing government compound, wearing white flowers. And in the capital's Tiananmen Square, the national flag flew at half-mast, surrounded by heavier--than-normal security. 
+			Pedestrians in one of the city's busiest shopping districts stopped walking and kept their heads low in a silent tribute ceremony, while police patrolling stood at the side of the road with their riot shields down and bowed heads.
+			Trains on Beijing's subway network also came to a standstill, and AFP saw passengers including children stand silently throughout the three minutes in a mark of respect.
+		</p>
+	</div>
+	<div id="RightDiv" style="border: 5px double black;">
+		<img src="Images/USA.webp" alt="No img" id="DivImg">
+		<h2>US Coronavirus Deaths Hit New Daily High Of 1,480 In 24 Hours</h2>
+		<p>
+			The United States recorded nearly 1,500 deaths from COVID-19 between Thursday and Friday, according to the Johns Hopkins University tracker, the worst 24-hour death toll globally since the pandemic began.
+			With 1,480 deaths counted between 8:30 pm Thursday and the same time Friday, according to the university''s continuously updated figures, the total number of people who have died since the start of the pandemic in the United States is now 7,406.
+		</p>
+		<p>
+			United States has advised all Americans to wear masks in public to protect against the new coronavirus, fearing the illness that has infected more than one million people worldwide may be spreading by normal breathing.
+			President Donald Trump said the government recommendation for all 330 million Americans to wear non-medical masks in places such as grocery stores would last "for a period of time." 
+			"It's going to be really a voluntary thing," Trump told reporters. "You don't have to do it and I'm choosing not to do it, but some people may want to do it and that's okay."
+			Since the virus was first identified in China in late December last year, health experts have said it is primarily spread through coughing and sneezing.
+		</p>
+	</div><br>
+	<hr color="black" id="IndiaHr">
+
+	<h3 id="SlideHead">The Coronavirus Has Emptied Tourist Sites and the Images Are Haunting</h3>
+	<div id="SlideImg">
+		<img class="mySlides" src="Images/Slideshow/the-louvre-museum.jpg" title="Musée du Louvre">
+		<img class="mySlides" src="Images/Slideshow/times-square.jpg" title="Times Square, New York City">
+		<img class="mySlides" src="Images/Slideshow/st-peters-square.jpg" title="St. Peter's Square, Vatican City">
+		<img class="mySlides" src="Images/Slideshow/south-beach.jpg" title="South Beach, Miami">
+		<img class="mySlides" src="Images/Slideshow/front-lawns-of-humayuns.jpg" title="Humayun's Tomb, New Delhi">
+		<img class="mySlides" src="Images/Slideshow/deserted-surroundings.jpg" title="The Colosseum, Rome">
+		<img class="mySlides" src="Images/Slideshow/white-tiled-area.jpg" title="Mecca's Grand Mosque">
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2500); // Change image every 2.5 seconds
+		}
+	</script>
+
+	<hr color="black" style="margin-top: 300px;">
+
+	<img src="Images/World.png" alt="No img" id="WorldImg" title="World Map">
+
+	<table width="550" border="2" style="float: left; margin-top: 15px;">
+		<tbody>
+		  <tr>
+			<th colspan="4" style="font-size: 20px;">Corona Cases All Over the World</th>
+		  </tr>
+		  <tr>
+			<th style="background-color: #dcdcdc;">Countries</th>
+			<th style="color: #3a81d8; background-color: #cfddee;">Positive Cases</th>
+			<th style="color: #4f9a0b ; background-color: #cfe4bc;">Recovered</th>
+			<th style="color: #cc362c; background-color: #eac9c7;">Deaths</th>
+		  </tr>
+		  <tr>
+			<td>United States</td>
+			<td>1,89,531</td>
+			<td>7,141</td>
+			<td>4,081</td>
+		  </tr>
+		  <tr>
+			<td>Italy</td>
+			<td>1,05,792</td>
+			<td>15,729</td>
+			<td>12,428</td>
+		  </tr>
+		  <tr>
+			<td>Spain</td>
+			<td>102,136</td>
+			<td>22,647</td>
+			<td>9,053</td>
+		  </tr>
+		  <tr>
+			<td>China</td>
+			<td>81,554</td>
+			<td>76,238	</td>
+			<td>3,312</td>
+		  </tr>
+		  <tr>
+			<td>Germany</td>
+			<td>72,004</td>
+			<td>7,632</td>
+			<td>800</td>
+		  </tr>
+		  <tr>
+			<td>France</td>
+			<td>51,487</td>
+			<td>7,882</td>
+			<td>3,516</td>
+		  </tr>
+		  <tr>
+			<td>Iran</td>
+			<td>44,606</td>
+			<td>14,656</td>
+			<td>2,898</td>
+		  </tr>
+		  <tr>
+			<td>United Kingdom</td>
+			<td>29,474</td>
+			<td>135</td>
+			<td>2,352</td>
+		  </tr>
+		  <tr>
+			<td>Turkey</td>
+			<td>23,934</td>
+			<td>786</td>
+			<td>581</td>
+		  </tr>
+		  <tr>
+			<td>Switzerland</td>
+			<td>20,505</td>
+			<td>6,415</td>
+			<td>666</td>
+		  </tr>
+		  <tr>
+			<td>Belgium</td>
+			<td>18,431</td>
+			<td>3,247</td>
+			<td>1,283</td>
+		  </tr>
+		  <tr>
+			<td>Israel</td>
+			<td>7,851</td>
+			<td>427</td>
+			<td>44</td>
+		  </tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>

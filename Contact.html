@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEWS 24</title>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="HTML,CSS">
+	<meta name="Author" content="Santhosh">
+	<link rel="icon" href="Images/Logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+	
+<body id="Home">
+
+	<a href="NEWS24.html">
+	<img src="Images/Logo.png" align=center id="logo" alt="No img">
+	</a>
+
+	<p id="time"></p>
+	<script>
+		var d = new Date();
+		document.getElementById("time").innerHTML = d;
+	</script><br>
+
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="India.html">India</a>
+		<a href="World.html">World</a>
+		<a href="Covid-19.html">Covid-19</a>
+		<a href="Entertainment.html">Entertainment</a>
+        <a href="Contact.html" id="active">Contact Us</a>
+	</nav>
+	<hr color="black"><br>
+
+	<div id="Contactform">
+		<h3 style="text-align: center;">For more Info or Queries, Contact Us</h3>
+		<form method="post">
+			<input type="text" placeholder="Your Name"  required> <br>
+			<input type="email" placeholder="Your Email" required> <br>
+			<input type="text" placeholder="Subject"  required> <br>
+			<textarea rows="4" cols="21" placeholder="Message" required></textarea> <br>
+			<label>Choose a file: Optional</label>
+			<input type="file"><br>
+			<button value="Submit" id="Submit">SUBMIT</button>
+			</script>
+		</form>
+	</div>
+	
+	<div id="ContactBox">
+
+		<p style="font-size: 20px">Ad: Coronavirus puts over 1.3 billion people in India on 21-day lockdown</p>
+		<div id="ContactSlides">
+			<img class="mySlides" src="Images/India/Police.jpeg" title="Indian policemen push barricades in the center of a road leading to India Gate">
+			<img class="mySlides" src="Images/India/Banglore.jpg" title="Deserted Bangalore Cantonment Railway station">
+			<img class="mySlides" src="Images/India/Mysore.jpg" title="Deserted Mysore KR Circle">
+			<img class="mySlides" src="Images/India/Mysore2.jpg" title="Deserted Mysore KR Circle">		
+			<img class="mySlides" src="Images/India/people.jpeg" title="People stand in white round marks and buy vegetables">
+			<img class="mySlides" src="Images/India/Mumbai.jpeg" title="The deserted Bandra-Worli Sea Link">
+		</div>
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2500); // Change image every 2.5 seconds
+		}
+	</script>
+
+	<footer>© Designed by Santhosh Kumar</footer>
+	
+</body>
+</html>
